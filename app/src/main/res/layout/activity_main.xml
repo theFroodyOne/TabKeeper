@@ -7,12 +7,129 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tipTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="76dp"
+        android:text="@string/tipTextView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tipEditTextNumber"
+        android:layout_width="116dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipTextView" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="56dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/nameTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/instructionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/instructionsTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/valueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/valueTextView"
+        app:layout_constraintStart_toEndOf="@+id/nameTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tabTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/tabTextView"
+        app:layout_constraintStart_toEndOf="@+id/valueTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tabTipTextView"
+        android:layout_width="63dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/tabTipTextView"
+        app:layout_constraintStart_toEndOf="@+id/tabTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Payer1"
+        android:layout_width="65dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textAlignment="textStart"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
+
+    <EditText
+        android:id="@+id/Value1"
+        android:layout_width="55dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/Payer1"
+        app:layout_constraintTop_toBottomOf="@+id/valueTextView" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="60dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/buttons"
+        android:textSize="8sp"
+        app:layout_constraintStart_toEndOf="@+id/Value1"
+        app:layout_constraintTop_toBottomOf="@+id/valueTextView" />
+
+    <TextView
+        android:id="@+id/tab1"
+        android:layout_width="61dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toBottomOf="@+id/tabTextView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="57dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/tab1"
+        app:layout_constraintTop_toBottomOf="@+id/tabTipTextView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
