@@ -48,5 +48,6 @@ class MainActivity : AppCompatActivity() {
         total.text = TOTAL.toString()
         val totalTip = findViewById<TextView>(R.id.tabTipTotal)
         totalTip.text = (((((TOTAL)*(1+tip))*100).roundToInt().toDouble())/100).toString()
+        //
     }
 }
