@@ -7,4 +7,5 @@
     <string name="tabTextView">Tab</string>
     <string name="tabTipTextView">Tab + tip</string>
     <string name="buttons">Enter</string>
+    <string name="total">Total</string>
 </resources>

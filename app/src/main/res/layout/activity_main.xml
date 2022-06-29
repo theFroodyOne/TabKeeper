@@ -6,24 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/payerTotal"
-        android:layout_width="128dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="456dp"
-        android:ems="10"
-        android:maxLines="3"
-        android:scrollbarStyle="outsideInset"
-        android:scrollbars="vertical"
-        android:singleLine="false"
-        android:textAlignment="textStart"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/valueTextView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
-
     <TextView
         android:id="@+id/tabTotal"
         android:layout_width="40dp"
@@ -41,7 +23,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="460dp"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/tab1"
+        app:layout_constraintStart_toEndOf="@+id/tab"
         app:layout_constraintTop_toBottomOf="@+id/tabTipTextView" />
 
     <EditText
@@ -68,9 +50,10 @@
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="392dp"
+        android:onClick="calculate"
         android:text="@string/buttons"
         android:textSize="8sp"
-        app:layout_constraintStart_toEndOf="@+id/Value1"
+        app:layout_constraintStart_toEndOf="@+id/value"
         app:layout_constraintTop_toBottomOf="@+id/valueTextView" />
 
     <TextView
@@ -90,7 +73,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="392dp"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/tab1"
+        app:layout_constraintStart_toEndOf="@+id/tab"
         app:layout_constraintTop_toBottomOf="@+id/tabTipTextView" />
 
     <EditText
@@ -152,7 +135,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="336dp"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/tab1"
+        app:layout_constraintStart_toEndOf="@+id/tab"
         app:layout_constraintTop_toBottomOf="@+id/tabTipTextView" />
 
     <Button
@@ -161,9 +144,10 @@
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="336dp"
+        android:onClick="calculate"
         android:text="@string/buttons"
         android:textSize="8sp"
-        app:layout_constraintStart_toEndOf="@+id/Value1"
+        app:layout_constraintStart_toEndOf="@+id/value"
         app:layout_constraintTop_toBottomOf="@+id/valueTextView" />
 
     <EditText
@@ -190,9 +174,10 @@
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="280dp"
+        android:onClick="calculate"
         android:text="@string/buttons"
         android:textSize="8sp"
-        app:layout_constraintStart_toEndOf="@+id/Value1"
+        app:layout_constraintStart_toEndOf="@+id/value"
         app:layout_constraintTop_toBottomOf="@+id/valueTextView" />
 
     <TextView
@@ -212,7 +197,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="280dp"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/tab1"
+        app:layout_constraintStart_toEndOf="@+id/tab"
         app:layout_constraintTop_toBottomOf="@+id/tabTipTextView" />
 
     <EditText
@@ -251,9 +236,10 @@
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="224dp"
+        android:onClick="calculate"
         android:text="@string/buttons"
         android:textSize="8sp"
-        app:layout_constraintStart_toEndOf="@+id/Value1"
+        app:layout_constraintStart_toEndOf="@+id/value"
         app:layout_constraintTop_toBottomOf="@+id/valueTextView" />
 
     <TextView
@@ -273,7 +259,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="224dp"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/tab1"
+        app:layout_constraintStart_toEndOf="@+id/tab"
         app:layout_constraintTop_toBottomOf="@+id/tabTipTextView" />
 
     <EditText
@@ -312,9 +298,10 @@
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="168dp"
+        android:onClick="calculate"
         android:text="@string/buttons"
         android:textSize="8sp"
-        app:layout_constraintStart_toEndOf="@+id/Value1"
+        app:layout_constraintStart_toEndOf="@+id/value"
         app:layout_constraintTop_toBottomOf="@+id/valueTextView" />
 
     <TextView
@@ -334,7 +321,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="168dp"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/tab1"
+        app:layout_constraintStart_toEndOf="@+id/tab"
         app:layout_constraintTop_toBottomOf="@+id/tabTipTextView" />
 
     <EditText
@@ -396,7 +383,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="112dp"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/tab1"
+        app:layout_constraintStart_toEndOf="@+id/tab"
         app:layout_constraintTop_toBottomOf="@+id/tabTipTextView" />
 
     <Button
@@ -405,9 +392,10 @@
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="112dp"
+        android:onClick="calculate"
         android:text="@string/buttons"
         android:textSize="8sp"
-        app:layout_constraintStart_toEndOf="@+id/Value1"
+        app:layout_constraintStart_toEndOf="@+id/value"
         app:layout_constraintTop_toBottomOf="@+id/valueTextView" />
 
     <EditText
@@ -434,13 +422,14 @@
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="56dp"
+        android:onClick="calculate"
         android:text="@string/buttons"
         android:textSize="8sp"
-        app:layout_constraintStart_toEndOf="@+id/Value1"
+        app:layout_constraintStart_toEndOf="@+id/value"
         app:layout_constraintTop_toBottomOf="@+id/valueTextView" />
 
     <TextView
-        android:id="@+id/tab"
+        android:id="@+id/tab1"
         android:layout_width="40dp"
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
@@ -456,11 +445,11 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="56dp"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/tab1"
+        app:layout_constraintStart_toEndOf="@+id/tab"
         app:layout_constraintTop_toBottomOf="@+id/tabTipTextView" />
 
     <EditText
-        android:id="@+id/value"
+        android:id="@+id/value1"
         android:layout_width="40dp"
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
@@ -560,7 +549,7 @@
         app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
 
     <EditText
-        android:id="@+id/Value1"
+        android:id="@+id/value"
         android:layout_width="40dp"
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
@@ -575,13 +564,14 @@
         android:layout_width="60dp"
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
+        android:onClick="calculate"
         android:text="@string/buttons"
         android:textSize="8sp"
-        app:layout_constraintStart_toEndOf="@+id/Value1"
+        app:layout_constraintStart_toEndOf="@+id/value"
         app:layout_constraintTop_toBottomOf="@+id/valueTextView" />
 
     <TextView
-        android:id="@+id/tab1"
+        android:id="@+id/tab"
         android:layout_width="40dp"
         android:layout_height="36dp"
         android:layout_marginStart="8dp"
@@ -597,6 +587,16 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:textSize="12sp"
-        app:layout_constraintStart_toEndOf="@+id/tab1"
+        app:layout_constraintStart_toEndOf="@+id/tab"
         app:layout_constraintTop_toBottomOf="@+id/tabTipTextView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payer7" />
 </androidx.constraintlayout.widget.ConstraintLayout>
